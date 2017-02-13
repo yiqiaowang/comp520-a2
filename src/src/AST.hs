@@ -91,8 +91,10 @@ ppStmts _ [] = ""
 ppStmts x (s:ss) = ppStmt x s ++ "\n" ++ ppStmts x ss
 
 ppExpr :: Expr -> Bool -> String
-ppExpr (E_Paren e) _ = "(" ++ ppExpr e False ++ ")"
-ppExpr (E_UMinus e) _ = "-(" ++ ppExpr e False ++ ")"
+ppExpr (E_Paren e) True = "(" ++ ppExpr e False ++ ")"
+ppExpr (E_Paren e) False = ppExpr e True
+ppExpr (E_UMinus e) True = "-(" ++ ppExpr e False ++ ")"
+ppExpr (E_UMinus e) False = "-" ++ ppExpr e True
 ppExpr (E_Add a b) True = "(" ++ ppExpr a True ++ "+" ++ ppExpr b True ++ ")"
 ppExpr (E_Add a b) False = ppExpr a True ++ "+" ++ ppExpr b True
 ppExpr (E_Sub a b) True = "(" ++ ppExpr a True ++ "-" ++ ppExpr b True ++ ")"
