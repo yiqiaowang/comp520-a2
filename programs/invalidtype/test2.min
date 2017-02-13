@@ -1,0 +1,5 @@
+// attempts to add a string and an int
+var x: int;
+var y: string;
+
+y = x + y;

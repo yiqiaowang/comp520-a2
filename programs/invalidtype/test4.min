@@ -1,0 +1,8 @@
+// attempts to multiply a float and a string
+var x: float;
+var y: string;
+
+read x;
+read y;
+
+print x * y;

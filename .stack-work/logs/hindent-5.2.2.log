@@ -1,0 +1,22 @@
+Configuring hindent-5.2.2...
+Building hindent-5.2.2...
+Preprocessing library hindent-5.2.2...
+[1 of 3] Compiling HIndent.Types    ( src/HIndent/Types.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/HIndent/Types.o )
+[2 of 3] Compiling HIndent.Pretty   ( src/HIndent/Pretty.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/HIndent/Pretty.o )
+
+src/HIndent/Pretty.hs:38:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Show (ast NodeInfo)
+    • In the type signature for:
+           pretty :: (Pretty ast, Show (ast NodeInfo)) =>
+                     ast NodeInfo -> Printer ()
+[3 of 3] Compiling HIndent          ( src/HIndent.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/HIndent.o )
+Preprocessing executable 'hindent' for hindent-5.2.2...
+[1 of 3] Compiling Path.Find        ( src/main/Path/Find.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/hindent/hindent-tmp/Path/Find.o )
+[2 of 3] Compiling Paths_hindent    ( .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/autogen/Paths_hindent.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/hindent/hindent-tmp/Paths_hindent.o )
+[3 of 3] Compiling Main             ( src/main/Main.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/hindent/hindent-tmp/Main.o )
+Linking .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/hindent/hindent ...
+Installing library in
+/home/yiqiao/.stack/snapshots/x86_64-linux-ncurses6/nightly-2017-01-17/8.0.1/lib/x86_64-linux-ghc-8.0.1/hindent-5.2.2-KpU35Ye3ZyE6XRsYJmzKnC
+Installing executable(s) in
+/home/yiqiao/.stack/snapshots/x86_64-linux-ncurses6/nightly-2017-01-17/8.0.1/bin
+Registering hindent-5.2.2...

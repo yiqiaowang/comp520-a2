@@ -1,0 +1,5 @@
+// This attempts to assign a float to an int.
+var x: int;
+var y: float;
+
+x = y;

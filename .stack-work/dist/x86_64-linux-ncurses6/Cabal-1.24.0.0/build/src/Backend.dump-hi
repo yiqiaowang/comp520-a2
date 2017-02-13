@@ -1,0 +1,284 @@
+
+==================== FINAL INTERFACE ====================
+2017-02-13 01:00:50.258074488 UTC
+
+interface assign2-0.1.0.0-HR9hU8cIXLf43tgzC2vdOI:Backend 8001
+  interface hash: f0acb371ee3d90cc5804e94038cb4e14
+  ABI hash: 9b359e3ed5192ff5f1aaae6ec7e143fa
+  export-list hash: a6df51496f01efd85bc388cd0175db5f
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 3eae81af6af509d189de115e6caf048f
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Backend.codeGen
+  Backend.initSymTbl
+  Backend.typeCheckWrap
+module dependencies: AST Parser SymbolTable Token
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.0.0
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Complex base-4.9.0.0:Data.Either
+                         base-4.9.0.0:Data.Functor.Const base-4.9.0.0:Data.Functor.Identity
+                         base-4.9.0.0:Data.List.NonEmpty base-4.9.0.0:Data.Monoid
+                         base-4.9.0.0:Data.Semigroup base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:Data.Version base-4.9.0.0:Data.Void
+                         base-4.9.0.0:GHC.Exts base-4.9.0.0:GHC.Generics
+                         base-4.9.0.0:GHC.IO.Exception base-4.9.0.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+import  -/  AST f3801c3ddccaad22ff6272fe0c886a92
+  exports: 2b09893de07e573487a38dddb47ef3ca
+  B_Else 40d0e38da5fe2c12b3f13d58d1df8a35
+  B_Endif 6e5793039af426f5a7ab2562f9088157
+  D_Decl d65f4af2df8fa883c8b0821474e1bde0
+  Decl 4a22c07fc0f4f3b20fe61bbdde40bcae
+  E_Add 4541553b8d71491796e0d47b23281a22
+  E_Div cefb30bfe7016cb841ac40533dc4e790
+  E_Float a3551181c698b4f0741c6f0989adcdbe
+  E_Iden ee5a02d4185b6017cc674446486a01c1
+  E_Int 4b7b7194f867d7c6ec7e626e701fedb7
+  E_Mult eedb11fc1802483a26994407260d438f
+  E_Paren 9b0fe02cdb2a5bb57f76a0717b37e967
+  E_String f971d508e74c94063dccd7293bab1fe1
+  E_Sub aa5042ab5e1a5e81584ac8ad96dd20cc
+  E_UMinus 411bcba97b08cf3c2ee29bf5a5d2cef4
+  Expr 8bef53793e07be01a303320dfb26df68
+  Prog 918dbd3f46e2cb0d5813954f7ddd7243
+  Prog cb4921f051f377cb1edf4347c01a4db9
+  S_Assign bc1b14b61d464ec80040db940f260486
+  S_If 6f1e5a74efbd9b6874e87b40443ba8d6
+  S_Print 1ccae0cfaaaa29255e4c1fec504256f8
+  S_Read 0377b1614c4e5ac0d0253a281d5b417f
+  S_While 50c88648696744603b40a95d59ea2557
+  Stmt 4b97b82783ec2b44ae7a49e3c8fd2ced
+  T_Float 5cef660a56101ae71d6cabdf23eadba3
+  T_Int db4d3c8700cb718cf9f2c28c06141260
+  T_String 19e6f970f152e51079200edc21045892
+  Type e6c7c0df5e6c2bf9f61707eedd35b038
+import  -/  Parser a5ced037bd9ac6e380baf0fcfd30c5ed
+  exports: 25285b630bd52bf2da1b224fb3f8cd24
+import  -/  SymbolTable da019e7ad97fb06c4c14a52ce55d64b7
+  exports: 236383074e785e53065e2e1cbc425b46
+  Entry 8856b6ed08b084ad3298085610002180
+  Entry c548569925daeb4ad7769a1b269be0f7
+  IdName 192f9079c0075dd77b1610fdb6d36815
+  addSym fe186585a8ff0d6813211e32dd062175
+  getSym 1b2c70ff3d4649639b22030391541855
+  hasKey cab3e032ed427b870da424efadae6e3b
+  newMap 8f20cabd599486a00452f74753fe5d90
+  parseEntry 829afe857898bfa2a4d268f34c19be51
+  removeJust 9fd73b60849baadee25956ce926622a6
+import  -/  base-4.9.0.0:Data.Tuple acb0ed10307ed88df6c81b8589f4de16
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.0.0:GHC.Show 952347a6ab730bcb25c0854d8bc6ca51
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map 24b19ef74cea78e4c18332bed9f0491d
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base 1e8d61dcc59a1a983b27bab6fd6bdcaf
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+43afbb0ae710ab0ab568967608639d7c
+  $tc'Op_Add :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13266875014121002407##
+                   10029598426917615974##
+                   Backend.$trModule
+                   Backend.$tc'Op_Add1) -}
+ae5c844e75e2b66cd196ba51811cd35b
+  $tc'Op_Add1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Op_Add"#) -}
+1eb4e8bc9ee4861bcd622a7c005c8f61
+  $tc'Op_Div :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15555296909379290827##
+                   8920308029731032857##
+                   Backend.$trModule
+                   Backend.$tc'Op_Div1) -}
+3ac2a1cf0e20c43330e00e2b7aed11d1
+  $tc'Op_Div1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Op_Div"#) -}
+b774b4bb188ec46b91cdbeeee31b3d86
+  $tc'Op_Mult :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1563639707955878410##
+                   10290585322616590572##
+                   Backend.$trModule
+                   Backend.$tc'Op_Mult1) -}
+43abaf96f3a9761d9379f5f89e0d224d
+  $tc'Op_Mult1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Op_Mult"#) -}
+e9035be9e62c47a81d93445c0969d35c
+  $tc'Op_Sub :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10900552425736832182##
+                   13630108626187683485##
+                   Backend.$trModule
+                   Backend.$tc'Op_Sub1) -}
+c6f77b8c9e15cd65a93bffd3d81d22a8
+  $tc'Op_Sub1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Op_Sub"#) -}
+9228ae61dd5c2e05124c958cd0aae839
+  $tc'Op_UMin :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3226157681262002901##
+                   4385032413663379183##
+                   Backend.$trModule
+                   Backend.$tc'Op_UMin1) -}
+8b509707b11179b1c2d7d0039a8b3331
+  $tc'Op_UMin1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Op_UMin"#) -}
+685400bc6fb07a91ea51bd4619263fad
+  $tcOp :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2651964143714308360##
+                   1073346105397098280##
+                   Backend.$trModule
+                   Backend.$tcOp1) -}
+0bf0af99958ad232b9b54f2e7cf5c9c1
+  $tcOp1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Op"#) -}
+bb05d288fcdfbb8deb9bac7724ea42cf
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Backend.$trModule2
+                   Backend.$trModule1) -}
+8afad9b3c16614a05d61881dd4aaa015
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Backend"#) -}
+37ff3a79ce5db9ad8014a9ac6ba1ef44
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "assign2-0.1.0.0-HR9hU8cIXLf43tgzC2vdOI"#) -}
+fd5867442335d1d2d2a0f9a7fd7ef462
+  $wcodeGen ::
+    [AST.Decl]
+    -> [AST.Stmt]
+    -> Data.Map.Base.Map SymbolTable.IdName SymbolTable.Entry
+    -> GHC.Base.String
+  {- Arity: 3, Strictness: <L,1*U><L,1*U><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: [AST.Decl])
+                   (ww1 :: [AST.Stmt])
+                   (w :: Data.Map.Base.Map SymbolTable.IdName SymbolTable.Entry) ->
+                 GHC.CString.unpackAppendCString#
+                   "#include <stdio.h>\n\
+                   \#include <stdlib.h>\n\
+                   \#include <string.h>\n"#
+                   (GHC.Base.++
+                      @ GHC.Types.Char
+                      Backend.preAmble
+                      (GHC.CString.unpackAppendCString#
+                         "\n\
+                         \int main(void) {\n"#
+                         (GHC.Base.++
+                            @ GHC.Types.Char
+                            (Backend.codeGenDeclWrap ww)
+                            (GHC.Base.++
+                               @ GHC.Types.Char
+                               (Backend.codeGenStmtWrap w ww1)
+                               Backend.codeGen1))))) -}
+6e439fe4814862689c4f3bd2b45f1cfb
+  $wpopSymTbl ::
+    [Backend.ParsedDecl]
+    -> Data.Map.Base.Map SymbolTable.IdName SymbolTable.Entry
+    -> (# Data.Map.Base.Map SymbolTable.IdName SymbolTable.Entry,
+          GHC.Types.Bool #)
+  {- Arity: 2, Strictness: <S,1*U><L,U>, Inline: [0] -}
+f6966f8574812e9810cdcdb78ae454f3
+  data Op = Op_Add | Op_Sub | Op_Div | Op_Mult | Op_UMin
+71750325db943dddaf37051fcbd2a4c3
+  type ParsedDecl = (SymbolTable.IdName, AST.Type)
+d5dfcd143db2f522107fe52540d83dac
+  codeGen ::
+    AST.Prog
+    -> Data.Map.Base.Map SymbolTable.IdName SymbolTable.Entry
+    -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U(1*U,1*U)><L,U>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: AST.Prog)
+                   (w1 :: Data.Map.Base.Map SymbolTable.IdName SymbolTable.Entry) ->
+                 case w of ww { AST.Prog ww1 ww2 ->
+                 Backend.$wcodeGen ww1 ww2 w1 }) -}
+7d79e80505f5ebe774e6584664636060
+  codeGen1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "return 0;\n\
+                   \}"#) -}
+a07a86933c71beda20c235c696a4a4fb
+  codeGenDeclWrap :: [AST.Decl] -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U> -}
+29608298457a0d06965ccd48de17e61f
+  codeGenStmtWrap ::
+    Data.Map.Base.Map SymbolTable.IdName SymbolTable.Entry
+    -> [AST.Stmt] -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U><S,1*U> -}
+12856645e2ef61eb99c5aaafb5d43f72
+  initSymTbl ::
+    AST.Prog
+    -> (Data.Map.Base.Map SymbolTable.IdName SymbolTable.Entry,
+        GHC.Types.Bool)
+  {- Arity: 1, Strictness: <S(SL),1*U(1*U,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ast :: AST.Prog) ->
+                 case ast of wild { AST.Prog d s ->
+                 Backend.popSymTbl
+                   (Backend.parseDecl d)
+                   (Data.Map.Base.Tip @ SymbolTable.IdName @ SymbolTable.Entry) }) -}
+7263693c05d5e72ea90180b7ef997676
+  parseDecl :: [AST.Decl] -> [Backend.ParsedDecl]
+  {- Arity: 1, Strictness: <S,1*U> -}
+b88b421bd59f6aea296ab0e6c1bf779e
+  popSymTbl ::
+    [Backend.ParsedDecl]
+    -> Data.Map.Base.Map SymbolTable.IdName SymbolTable.Entry
+    -> (Data.Map.Base.Map SymbolTable.IdName SymbolTable.Entry,
+        GHC.Types.Bool)
+  {- Arity: 2, Strictness: <S,1*U><L,U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: [Backend.ParsedDecl])
+                   (w1 :: Data.Map.Base.Map SymbolTable.IdName SymbolTable.Entry) ->
+                 case Backend.$wpopSymTbl w w1 of ww { (#,#) ww1 ww2 ->
+                 (ww1, ww2) }) -}
+078ccbe87ad4069ba3357bf33a69e09b
+  preAmble :: [GHC.Types.Char]
+095a88bf7dcba89ce303860b387fb080
+  typeCheck ::
+    Data.Map.Base.Map SymbolTable.IdName SymbolTable.Entry
+    -> [AST.Stmt] -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <L,U><S,1*U> -}
+8906356c9c62977c7c6268ccfa2aa5d8
+  typeCheckWrap ::
+    AST.Prog
+    -> Data.Map.Base.Map SymbolTable.IdName SymbolTable.Entry
+    -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S(LS),1*U(A,1*U)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ast :: AST.Prog)
+                   (m :: Data.Map.Base.Map SymbolTable.IdName SymbolTable.Entry) ->
+                 case ast of wild { AST.Prog d s -> Backend.typeCheck m s }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

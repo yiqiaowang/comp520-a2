@@ -1,0 +1,5 @@
+// try to unary minus a string
+var x: int;
+var y: string;
+
+print - (x * y) + (y * x);
