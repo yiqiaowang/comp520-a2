@@ -32,8 +32,8 @@ main = do
       if (typeCheckWrap ast (fst symtbl))
         then writeFile (concat args ++ ".c") (codeGen ast (fst symtbl))
         else do
-        error "Error: Failed to type check. Created (partial) symbol table and pretty printed file anways."
+        error "Error: Failed to type check."
     else do
-    error "Error: Failed to populate symbol table. Creating (partial) symbol table and pretty printed file anways."
+    error "Error: Failed to populate symbol table."
     writeFile (concat args ++ ".symbol.txt") (show $! symtbl)
     pPrint pprint args

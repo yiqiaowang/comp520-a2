@@ -9,7 +9,6 @@ maintainer:          yiqiao.wang96@gmail.com
 copyright:           2017 Yi Qiao Wang
 category:            Web
 build-type:          Simple
-extra-source-files:  README
 cabal-version:       >=1.10
 
 library
