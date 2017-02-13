@@ -9,6 +9,8 @@ module AST
   , prettyPrint
   ) where
 
+import Text.Printf
+
 data Prog =
   Prog [Decl]
        [Stmt]
@@ -100,7 +102,7 @@ ppExpr (E_Mult a b) False = ppExpr a True ++ "*" ++ ppExpr b True
 ppExpr (E_Div a b) True = "(" ++ ppExpr a True ++ "/" ++ ppExpr b True ++ ")"
 ppExpr (E_Div a b) False = ppExpr a True ++ "/" ++ ppExpr b True
 ppExpr (E_Int a) _ = show a
-ppExpr (E_Float a) _ = show a
+ppExpr (E_Float a) _ = printf "%f" a
 ppExpr (E_Iden a) _ = a
 ppExpr (E_String a) _ = a
 
